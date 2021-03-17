@@ -1,2 +1,2 @@
 # bet-fullstack
-prediction/ ranking / live betting
+predictions/ rankings / live betting
