@@ -80,6 +80,10 @@ body, html {
     text-align: center;
     background-image:teal;
   }
+
+  .upcoming-match {
+    color: black;
+  }
   
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 600px) {
