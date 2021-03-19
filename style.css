@@ -57,29 +57,52 @@ body, html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-color:white;
+    background-color: slategray;
+    background:fill;
+    font-family: 'Sedgwick Ave Display', cursive, orange;
+    text-size-adjust: 150px;
+    
   }
 
-  .card-one {
+  .card:hover{
+    box-shadow: 6px 4px 10px yellowgreen;
+}
+
+  .one-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-image:teal;
+    background-image: url(/Users/christineosmak/bet-fullstack/Back.png);
+    
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
   }
 
-  .card-two {
+
+
+  .two-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-image:teal;
+    background-color: slategray;
+    background:fill;
   }
 
-  .card-three {
+  .three-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-image:teal;
+    background-image: url(/Users/christineosmak/bet-fullstack/back3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
   }
+
   
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 600px) {
@@ -87,5 +110,18 @@ body, html {
       width: 100%;
       display: block;
       margin-bottom: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+      padding: 16px;
+      text-align: center;
+      font-family: 'Sedgwick Ave Display', cursive;
+      color: orange;
+      text-size-adjust: 150px;
     }
   }
+
+  .card-title{ 
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: orange;
+    text-size-adjust: 200px;
+  }
+
