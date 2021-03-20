@@ -1,11 +1,13 @@
-body, html {
-    height: 100%;
+body,
+html {
+  height: 100%;
 }
 
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://resources.premierleague.com/premierleague/photo/2016/08/14/11ed9788-9248-4567-bb38-42bb1e4d9c6a/589475146.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://resources.premierleague.com/premierleague/photo/2016/08/14/11ed9788-9248-4567-bb38-42bb1e4d9c6a/589475146.jpg");
 
   /* Set a specific height */
   height: 50%;
@@ -28,68 +30,75 @@ body, html {
 }
 
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Float four columns side by side */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+
+.card-one {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-image: teal;
+}
+
+.card-two {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-image: teal;
+}
+
+.card-three {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-image: teal;
+}
+
+.upcoming-match {
+  color: black;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
   .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-  
-  /* Remove extra left and right margins, due to padding in columns */
-  .row {margin: 0 -5px;}
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-color:white;
-  }
-
-  .card-one {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-image:teal;
-  }
-
-  .card-two {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-image:teal;
-  }
-
-  .card-three {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-image:teal;
-  }
-
-  .upcoming-match {
-    color: black;
-  }
-  
-  /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
+}
+#videoTarget {
+  width: 560px;
+  height: 315px;
+  margin: 0 auto;
+}
