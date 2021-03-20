@@ -1,11 +1,13 @@
-body, html {
-    height: 100%;
+body,
+html {
+  height: 100%;
 }
 
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://resources.premierleague.com/premierleague/photo/2016/08/14/11ed9788-9248-4567-bb38-42bb1e4d9c6a/589475146.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://resources.premierleague.com/premierleague/photo/2016/08/14/11ed9788-9248-4567-bb38-42bb1e4d9c6a/589475146.jpg");
 
   /* Set a specific height */
   height: 75%;
@@ -28,152 +30,168 @@ body, html {
 }
 
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Float four columns side by side */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: slategray;
+  background: fill;
+  font-family: "Sedgwick Ave Display", cursive, orange;
+  text-size-adjust: 150px;
+}
+
+.card:hover {
+  box-shadow: 6px 4px 10px yellowgreen;
+}
+
+.one-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-image: url("Back.png");
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.two-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: slategray;
+  background: fill;
+}
+
+.three-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-image: url("back3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 75%;
+}
+
+.card-three {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-image: teal;
+}
+
+.upcoming-match {
+  color: black;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
   .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-  
-  /* Remove extra left and right margins, due to padding in columns */
-  .row {margin: 0 -5px;}
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-color: slategray;
-    background:fill;
-    font-family: 'Sedgwick Ave Display', cursive, orange;
-    text-size-adjust: 150px;
-    
-  }
-
-  .card:hover{
-    box-shadow: 6px 4px 10px yellowgreen;
+}
+#videoTarget {
+  width: 560px;
+  height: 315px;
+  margin: 0 auto;
 }
 
-  .one-card {
+.upcoming-match {
+  color: black;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-image: url("Back.png");
-    
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-
-
-  .two-card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-color: slategray;
-    background:fill;
-  }
-
-  .three-card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-image: url("back3.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position:relative;
-    height: 75%
-
-  }
-
-  .upcoming-match {
-    color: black;
-  }
-
-  .upcoming-match {
-    color: black;
-  }
-
-  
-  /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-      padding: 16px;
-      text-align: center;
-      font-family: 'Sedgwick Ave Display', cursive;
-      color: orange;
-      text-size-adjust: 150px;
-    }
-  }
-
-  .card-title{ 
-    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: "Sedgwick Ave Display", cursive;
     color: orange;
-    text-size-adjust: 200px;
+    text-size-adjust: 150px;
   }
-
-  #rivalsimg {
-    width: 20%;
-    height: 20%;
-  }
-
-.PC{
-    position: relative;
-     float:left;
-     width: 25%;
-     height:25%
-  }
-
-.NBC{
-  position: relative;
-     float:left;
-     width: 25%;
-     height:25%
 }
 
-.Fubo{
-  position: relative;
-     float:left;
-     width: 25%;
-     height:25%
+.card-title {
+  font-family: "Sedgwick Ave Display", cursive;
+  color: orange;
+  text-size-adjust: 200px;
 }
 
-.Sling{
-  position: relative;
-     float:left;
-     width: 25%;
-     height:25%
+#rivalsimg {
+  width: 20%;
+  height: 20%;
+}
 
+.PC {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 25%;
+}
+
+.NBC {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 25%;
+}
+
+.Fubo {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 25%;
+}
+
+.Sling {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 25%;
 }
 
 #argumentimg {
   width: 25%;
   height: 25%;
 }
-  /* gives a more centered placement to text */
+/* gives a more centered placement to text */
 #pmargin {
   margin-left: 25%;
   margin-right: 25%;
@@ -181,12 +199,14 @@ body, html {
 #card4-text {
   color: red;
 }
-#hlogo:hover{
+#hlogo:hover {
   box-shadow: 6px 4px 10px yellowgreen;
   border-radius: 30px;
 }
-#badge:hover{
+#badge:hover {
   box-shadow: 6px 4px 10px yellowgreen;
   border-radius: 30px;
-  transform: scale(1.7); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(
+    1.7
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
