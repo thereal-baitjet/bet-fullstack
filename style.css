@@ -8,7 +8,7 @@ body, html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://resources.premierleague.com/premierleague/photo/2016/08/14/11ed9788-9248-4567-bb38-42bb1e4d9c6a/589475146.jpg");
 
   /* Set a specific height */
-  height: 50%;
+  height: 75%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -72,7 +72,7 @@ body, html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-image: url(/Users/christineosmak/bet-fullstack/Back.png);
+    background-image: url("Back.png");
     
 
     /* Position and center the image to scale nicely on all screens */
@@ -96,11 +96,17 @@ body, html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-image: url(/Users/christineosmak/bet-fullstack/back3.png);
+    background-image: url("back3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position:relative;
+    height: 75%
+
+  }
+
+  .upcoming-match {
+    color: black;
   }
 
   
@@ -124,4 +130,38 @@ body, html {
     color: orange;
     text-size-adjust: 200px;
   }
+
+  #rivalsimg {
+    width: 20%;
+    height: 20%;
+  }
+
+  .PC{
+    position: relative;
+     float:left;
+     width: 25%;
+     height:25%
+  }
+
+.NBC{
+  position: relative;
+     float:left;
+     width: 25%;
+     height:25%
+}
+
+.Fubo{
+  position: relative;
+     float:left;
+     width: 25%;
+     height:25%
+}
+
+.Sling{
+  position: relative;
+     float:left;
+     width: 25%;
+     height:25%
+
+}
 
