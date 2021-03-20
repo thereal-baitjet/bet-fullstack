@@ -10,7 +10,7 @@ html {
     url("https://resources.premierleague.com/premierleague/photo/2016/08/14/11ed9788-9248-4567-bb38-42bb1e4d9c6a/589475146.jpg");
 
   /* Set a specific height */
-  height: 50%;
+  height: 75%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -61,21 +61,47 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: white;
+  background-color: slategray;
+  background: fill;
+  font-family: "Sedgwick Ave Display", cursive, orange;
+  text-size-adjust: 150px;
 }
 
-.card-one {
+.card:hover {
+  box-shadow: 6px 4px 10px yellowgreen;
+}
+
+.one-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-image: teal;
+  background-image: url("Back.png");
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-.card-two {
+.two-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-image: teal;
+  background-color: slategray;
+  background: fill;
+}
+
+.three-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-image: url("back3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 75%;
 }
 
 .card-three {
@@ -101,4 +127,86 @@ body {
   width: 560px;
   height: 315px;
   margin: 0 auto;
+}
+
+.upcoming-match {
+  color: black;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    font-family: "Sedgwick Ave Display", cursive;
+    color: orange;
+    text-size-adjust: 150px;
+  }
+}
+
+.card-title {
+  font-family: "Sedgwick Ave Display", cursive;
+  color: orange;
+  text-size-adjust: 200px;
+}
+
+#rivalsimg {
+  width: 20%;
+  height: 20%;
+}
+
+.PC {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 25%;
+}
+
+.NBC {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 25%;
+}
+
+.Fubo {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 25%;
+}
+
+.Sling {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 25%;
+}
+
+#argumentimg {
+  width: 25%;
+  height: 25%;
+}
+/* gives a more centered placement to text */
+#pmargin {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#card4-text {
+  color: red;
+}
+#hlogo:hover {
+  box-shadow: 6px 4px 10px yellowgreen;
+  border-radius: 30px;
+}
+#badge:hover {
+  box-shadow: 6px 4px 10px yellowgreen;
+  border-radius: 30px;
+  transform: scale(
+    1.7
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
