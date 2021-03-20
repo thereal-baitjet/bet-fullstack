@@ -133,4 +133,24 @@ body, html {
     width: 20%;
     height: 20%;
   }
-
+  #argumentimg {
+    width: 25%;
+    height: 25%;
+  }
+  /* gives a more centered placement to text */
+  #pmargin {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  #card4-text {
+    color: red;
+  }
+  #hlogo:hover{
+    box-shadow: 6px 4px 10px yellowgreen;
+    border-radius: 30px;
+  }
+  #badge:hover{
+    box-shadow: 6px 4px 10px yellowgreen;
+    border-radius: 30px;
+    transform: scale(1.7); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
