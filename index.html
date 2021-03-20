@@ -4,9 +4,9 @@
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Bet Full Stack</title>
 
@@ -15,7 +15,7 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <a class="navbar-brand" href="#"><img src="assets/LogoMakr-58DynD.png"></a>
+    <a class="navbar-brand" href="#"><img id="hlogo" src="assets/LogoMakr-58DynD.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -28,10 +28,12 @@
             Predictions
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Articles</a>
-            <a class="dropdown-item" href="#">Statistics</a>
-            <a class="dropdown-item" href="#">Past Scores</a>
-            <a class="dropdown-item" href="#">Highlights</a>
+            <a class="dropdown-item" href="https://www.theguardian.com/football/premierleague">Articles</a>
+            <a class="dropdown-item" href="https://www.premierleague.com/stats">Statistics</a>
+            <a class="dropdown-item"
+              href="https://www.google.com/search?q=premier+league+scores&rlz=1C5CHFA_enUS728US728&sxsrf=ALeKk00ngYEBdxYszUGxFIB9p7r0JSwuLw%3A1616257739902&ei=yyJWYJKyNsK4ggfV8IvIBA&oq=premier+league+scores&gs_lcp=Cgdnd3Mtd2l6EAMyCggAEMsBEEYQ_QEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywE6BwgjELADECc6BwguELADEEM6BAgjECc6BQguEMsBUNAGWLUQYMwRaAFwAngAgAFwiAG3BZIBAzYuMpgBAKABAaoBB2d3cy13aXrIAQrAAQE&sclient=gws-wiz&ved=0ahUKEwjSw86jpb_vAhVCnOAKHVX4AkkQ4dUDCA4&uact=5#sie=lg;/g/11j4y8fvpd;2;/m/02_tc;mt;fp;1;;">Past
+              Scores</a>
+            <a class="dropdown-item" href="#highlights">Highlights</a>
           </div>
         </li>
         <li class="nav-item dropdown active btn btn-info btn-lg">
@@ -93,7 +95,7 @@
   </div>
   <div class="one-card" style="width: 100%;">
     <div class="card-body">
-      <h5 class="card-title">This week's highlights</h5>
+      <h5 id="highlights" class="card-title">This week's highlights</h5>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/L6JebqqZbMg" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
@@ -107,12 +109,16 @@
           <div class="card"><a href="https://sportsbook.fanduel.com/sports/navigation/730.1/9976.3">Fanduel</a></div>
         </div>
         <div class="column">
-          <div class="card"><a href="https://sports.nj.betmgm.com/en/sports/football-4/betting/england-14/premier-league-46">BetMGM</a></div>
+          <div class="card"><a
+              href="https://sports.nj.betmgm.com/en/sports/football-4/betting/england-14/premier-league-46">BetMGM</a>
+          </div>
         </div>
         <div class="column">
           <div class="card"><a href="https://sportsbook.draftkings.com/leagues/soccer/53591936?category=game-lines&subcategory=money-line-(regular-time)">DraftKings</a>
       </div>
       </div>
+    </div>
+    <div class="card"><a href="https://www.freesupertips.com/predictions/premier-league/">Free Super Tips</a>
     </div>
   </div>
 </div>
@@ -168,6 +174,28 @@
           <a href="https://www.liverpoolfc.com/" class="card-link">Liverpool homepage</a>
           <img id="rivalsimg" src="https://images.daznservices.com/di/library/GOAL/c1/9b/liverpool-manchester-united-most-trophies_xq4hoizsmosp1if3a2pu6d6vr.png?t=-1130491380&amp;quality=60&amp;w=1600" alt="rivals holding up cups">
           <a href="https://www.manutd.com/" class="card-link">Manchester United</a>
+    </div>
+  </div>
+  <div class="card" style="width: 100%;">
+    <div class="card-body">
+      <h5 class="card-title">Premier League <br>Rivalry<h5>
+          <h6 class="card-subtitle mb-2 text-primary">liverpool vs Manchester United</h6>
+          <img id="badge" src="https://resources.premierleague.com/premierleague/badges/50/t14@x2.png" alt="liverpool badge">
+          <img id="badge" src="https://resources.premierleague.com/premierleague/badges/50/t1@x2.png"
+            alt="manchester united badge">
+          <p id="pmargin" class="card-text">The rivalry between Manchester United and Liverpool
+            Each club can claim historical supremacy over the other: United for their 20 league titles to Liverpool's 19
+            and Liverpool for being European champions six times to United's three.</p>
+          <a id="hlogo" href="https://www.liverpoolfc.com/" class="card-link">Liverpool homepage</a>
+          <img id="rivalsimg" id="hlogo"
+            src="https://images.daznservices.com/di/library/GOAL/c1/9b/liverpool-manchester-united-most-trophies_xq4hoizsmosp1if3a2pu6d6vr.png?t=-1130491380&amp;quality=60&amp;w=1600"
+            alt="rivals holding up cups">
+          <a id="hlogo" href="https://www.manutd.com/" class="card-link">Manchester United</a>
+          <p>Here we see them heationg up in a argument in intense competition!</p>
+          <a href="https://youtu.be/h8OI5lTUUKE">
+          <img id="argumentimg"
+            src="https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-images/002/093/760/hi-res-152626277_crop_north.jpg"
+            alt="heated argument"><br>Click imag to see how heated it gets</a>
     </div>
   </div>
   <!--cards from getbootstrap.com-->
