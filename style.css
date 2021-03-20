@@ -103,6 +103,10 @@ body, html {
     position: relative;
   }
 
+  .upcoming-match {
+    color: black;
+  }
+
   
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 600px) {
@@ -124,4 +128,5 @@ body, html {
     color: orange;
     text-size-adjust: 200px;
   }
+
 
