@@ -75,7 +75,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-image: url("Back.png");
+  background-image: url("/assets/images/Back.png");
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -96,7 +96,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-image: url("back3.png");
+  background-image: url("/assets/images/back3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
