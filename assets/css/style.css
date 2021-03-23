@@ -61,9 +61,9 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: slategray;
+  background-color: white;
   background: fill;
-  font-family: "Sedgwick Ave Display", cursive, orange;
+  /* font-family: "Sedgwick Ave Display", cursive, orange; */
   text-size-adjust: 150px;
 }
 
@@ -75,7 +75,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-image: url("Back.png");
+  background-image: url("/assets/images/Back.png");
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -88,7 +88,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: slategray;
+  background-color: white;
   background: fill;
 }
 
@@ -96,12 +96,12 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-image: url("back3.png");
+  background-image: url("/assets/images/back3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 75%;
+  /* height: 75%; */
 }
 
 .card-three {
@@ -142,14 +142,14 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    font-family: "Sedgwick Ave Display", cursive;
+    /* font-family: "Sedgwick Ave Display", cursive; */
     color: orange;
     text-size-adjust: 150px;
   }
 }
 
 .card-title {
-  font-family: "Sedgwick Ave Display", cursive;
+  /* font-family: "Sedgwick Ave Display", cursive; */
   color: orange;
   text-size-adjust: 200px;
 }
@@ -159,32 +159,23 @@ body {
   height: 20%;
 }
 
-.PC {
-  position: relative;
-  float: left;
-  width: 25%;
-  height: 25%;
+.imgtvContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.NBC {
-  position: relative;
-  float: left;
-  width: 25%;
-  height: 25%;
-}
-
-.Fubo {
-  position: relative;
-  float: left;
-  width: 25%;
-  height: 25%;
-}
-
+.PC,
+.NBC,
+.Fubo,
 .Sling {
   position: relative;
-  float: left;
+  margin: 10px;
+  /* float: left; */
   width: 25%;
-  height: 25%;
+  /* height: 25%; */
+  min-width: 200px;
+  min-height: 200px;
 }
 
 #argumentimg {
