@@ -34,7 +34,17 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  -webkit-text-stroke: .3px black
+}
+
+div{
+  font-family: 'Oswald', sans-serif;
+  color:darkorange ;
+  text-decoration: none;
+  text-emphasis-style: bold;
+  -webkit-text-stroke: .3px black
 }
 
 /* Float four columns side by side */
@@ -61,11 +71,13 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: white;
+  background-color: lightgrey;
   background: fill;
-  /* font-family: "Sedgwick Ave Display", cursive, orange; */
-  text-size-adjust: 150px;
+  font-family: 'Oswald', sans-serif;
+  text-size-adjust: 400px;
+  -webkit-text-stroke: .3px black
 }
+
 
 .card:hover {
   box-shadow: 6px 4px 10px yellowgreen;
@@ -75,7 +87,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-image: url("./assets/images/Back.png");
+  background-image: url("/Users/christineosmak/bet-fullstack/assets/images/Back.png");
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -88,7 +100,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: white;
+  background-color: lightgrey;
   background: fill;
 }
 
@@ -96,7 +108,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-image: url("./assets/images/back3.png");
+  background-image: url("/Users/christineosmak/bet-fullstack/assets/images/back3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,15 +154,11 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    /* font-family: "Sedgwick Ave Display", cursive; */
-    color: orange;
     text-size-adjust: 150px;
   }
 }
 
 .card-title {
-  /* font-family: "Sedgwick Ave Display", cursive; */
-  color: orange;
   text-size-adjust: 200px;
 }
 
@@ -174,8 +182,8 @@ body {
   /* float: left; */
   width: 25%;
   /* height: 25%; */
-  min-width: 200px;
-  min-height: 200px;
+  min-width: 100px;
+  min-height: 100px;
 }
 
 #argumentimg {
