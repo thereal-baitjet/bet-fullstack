@@ -26,9 +26,11 @@ function getPredictions() {
         return response.json();
     })
     .then(function(data) {
+        var upcomingMatchCount = 0;
         var dataArray = data.data;
         dataArray.forEach(function(match) {
             if (match.competition_name == 'Premier League' && match.competition_cluster == 'England') {
+                upcomingMatchCount += 1;
                 var awayTeam = match.away_team;
                 var homeTeam = match.home_team;
                 var matchDate = match.start_date;
@@ -50,7 +52,17 @@ function getPredictions() {
                 `;
             }
         })
-        console.log(matchHTML);
+        if (upcomingMatchCount === 0) {
+            matchHTML += 
+            `<div class="card col-4 mx-2">
+            <div class="card-body upcoming-match">
+            <h5 class="card-title">No Upcoming Games</h5>
+            <p>Please take a look around and check back tomorrow!</p>
+            </div>
+            </div>
+            `
+        }
+
         upcomingContainer.append(matchHTML);
 
     })

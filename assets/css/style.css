@@ -29,6 +29,12 @@ html {
   color: white;
 }
 
+.hero-container {
+  position: absolute;
+  width: 100%;
+  bottom: 2%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -139,6 +145,10 @@ div{
   width: 560px;
   height: 315px;
   margin: 0 auto;
+}
+
+#team-dropdown-div {
+  display: inline;
 }
 
 .upcoming-match {
