@@ -6,8 +6,7 @@ html {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://resources.premierleague.com/premierleague/photo/2016/08/14/11ed9788-9248-4567-bb38-42bb1e4d9c6a/589475146.jpg");
+  background-image:url("https://resources.premierleague.com/premierleague/photo/2016/08/14/11ed9788-9248-4567-bb38-42bb1e4d9c6a/589475146.jpg");
 
   /* Set a specific height */
   height: 75%;
@@ -93,7 +92,8 @@ div{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-image: url("/Users/christineosmak/bet-fullstack/assets/images/Back.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.gamingfrog.com/wp-content/uploads/2019/09/FIFA-20-background.jpg");
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -114,7 +114,8 @@ div{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-image: url("/Users/christineosmak/bet-fullstack/assets/images/back3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://i.pinimg.com/564x/f4/77/4a/f4774a3946b32d739aea77f41572f6af.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
