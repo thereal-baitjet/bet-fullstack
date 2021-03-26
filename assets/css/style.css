@@ -93,7 +93,7 @@ div{
   padding: 16px;
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://www.gamingfrog.com/wp-content/uploads/2019/09/FIFA-20-background.jpg");
+  url("https://www.gamingfrog.com/wp-content/uploads/2019/09/FIFA-20-background.jpg");
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
